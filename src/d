@@ -1,186 +1,180 @@
-if tipo_contrato == "Venta" then
-    if sector == "Norte" and num_habitaciones <= 2 and num_banos == 1 and estado == "Nuevo" and parqueadero == "No" and zonas_comunes == "No" and area_construida <= 170 and niveles <= 2 then
-        random(130000000, 150000000)
-        
-    elsif sector == "Norte" and num_habitaciones >= 2 and num_banos == 2 and estado == "Nuevo" and parqueadero == "No" and zonas_comunes == "No" and area_construida > 170 and niveles >= 2 then
-        random(170000000, 190000000)
+if estado == "Nuevo"
+  case sector
+   when "Norte"
+    if parqueadero == "Si"
+      if num_habitaciones <= 2 and num_banos <=1 and area_construida <=170 and niveles <= 2 
+        random(250000000, 280000000)
 
-    elsif sector == "Norte" and num_habitaciones <= 2 and num_banos > 1 and estado == "Nuevo" and parqueadero == "Si" and zonas_comunes == "Si" and area_construida <= 170 and niveles <= 2 then
-        random(150000000, 170000000)
+      elsif num_habitaciones <= 2 and num_banos <=1 and area_construida >170 and niveles <= 2 
+        random(270000000, 300000000)
 
+      elsif num_habitaciones >= 2 and num_banos >=1 and area_construida >170 and niveles > 2 
+        random(280000000, 310000000)
 
-    elsif sector == "Centro" then
-        random(200000000, 250000000)
-    elsif sector == "Sur" then
-        random(120000000, 160000000)
-    else
-    random(180000000, 220000000)
     end
-
-
-if tipo_contrato == "Venta" then
-  if sector == "Norte"  and estado == "Nuevo" and parqueadero == "No" and zonas_comunes == "No" then
-    if num_habitaciones <= 2 and num_banos == 1   and area_construida <= 170 and niveles <= 2 then
-      random(130000000, 150000000)
-    elsif num_habitaciones > 2 and num_banos >= 2  and area_construida > 170 and niveles >= 2 then
-      random(160000000, 190000000)
-    end
-  elsif sector == "Norte"  and estado == "Nuevo" and parqueadero == "Si" and zonas_comunes == "Si" then
-    if num_habitaciones <= 2 and num_banos == 1   and area_construida <= 170 and niveles <= 2 then
-      random(140000000, 160000000)
-    elsif num_habitaciones > 2 and num_banos >= 2  and area_construida > 170 and niveles >= 2 then
-      random(170000000, 210000000)
-    end
-
-
-
-if tipo_contrato == "Venta" then
-  if sector == "Norte"  and estado == "Nuevo" then
-   if parqueadero == "No" and zonas_comunes == "No" then
-      if num_habitaciones <= 2 and num_banos == 1   and area_construida <= 170 and niveles <= 2 then
-        random(130000000, 150000000)
-      elsif num_habitaciones > 2 and num_banos >= 2  and area_construida > 170 and niveles >= 2 then
-        random(160000000, 190000000)
-      end
-    elsif  parqueadero == "Si" and zonas_comunes == "Si" then
-      if num_habitaciones <= 2 and num_banos == 1   and area_construida <= 170 and niveles <= 2 then
-        random(140000000, 160000000)
-      elsif num_habitaciones > 2 and num_banos >= 2  and area_construida > 170 and niveles >= 2 then
-        random(170000000, 200000000)
-      end
   
+end
 
+elsif 
+end
+  case sector
 
+  when "Norte"
+    if estado == "Nuevo"
+      if parqueadero == "No" 
+        if num_habitaciones <= 2 && num_banos == 1 && area_construida <= 170 && niveles <= 2
+          random(130_000_000, 150_000_000)
+        else
+          random(160_000_000, 190_000_000)
+        end
 
+      elsif parqueadero == "Si" 
+        if num_habitaciones <= 2 && num_banos == 1 && area_construida <= 170 && niveles <= 2
+          random(140_000_000, 160_000_000)
+        else
+          random(170_000_000, 200_000_000)
+        end
 
-    elsif parqueadero == "Sí" and zonas_comunes == "Sí" and estado == "Casi Nuevo" and area_construida > 180 then
-      random(200000000, 240000000)
+      elsif parqueadero == "No" 
+        if num_habitaciones <= 2
+          random(135_000_000, 155_000_000)
+        else
+          random(165_000_000, 190_000_000)
+        end
 
-    else
-      random(160000000, 180000000)  # valor por defecto si no coincide ninguna
+      elsif parqueadero == "Si" 
+        if num_habitaciones <= 2
+          random(135_000_000, 155_000_000)
+        else
+          random(165_000_000, 190_000_000)
+        end
+
+      end
     end
 
+  when "Centro"
+    if estado == "Nuevo"
+      if parqueadero == "No"
+        if num_habitaciones <= 2
+          random(110_000_000, 130_000_000)
+        else
+          random(140_000_000, 160_000_000)
+        end
+
+      elsif parqueadero == "Si" 
+        if num_habitaciones <= 2
+          random(130_000_000, 150_000_000)
+        else
+          random(160_000_000, 180_000_000)
+        end
+
+      elsif parqueadero == "No" 
+        if num_habitaciones <= 2
+          random(120_000_000, 140_000_000)
+        else
+          random(150_000_000, 170_000_000)
+        end
+
+      elsif parqueadero == "Si" 
+        if num_habitaciones <= 2
+          random(120_000_000, 140_000_000)
+        else
+          random(150_000_000, 170_000_000)
+        end
+
+      end
+    end
+
+  when "Sur"
+    if estado == "Nuevo"
+      if parqueadero == "No" 
+        if num_habitaciones <= 2
+          random(90_000_000, 110_000_000)
+        else
+          random(120_000_000, 140_000_000)
+        end
+
+      elsif parqueadero == "Si" 
+        if num_habitaciones <= 2
+          random(110_000_000, 130_000_000)
+        else
+          random(140_000_000, 160_000_000)
+        end
+
+      elsif parqueadero == "No" 
+        if num_habitaciones <= 2
+          random(100_000_000, 120_000_000)
+        else
+          random(130_000_000, 150_000_000)
+        end
+
+      elsif parqueadero == "Si" 
+        if num_habitaciones <= 2
+          random(100_000_000, 120_000_000)
+        else
+          random(130_000_000, 150_000_000)
+        end
+
+      end
+    end
+
+  end
 
 
-    elsif tipo_contrato == "Arriendo" then
-  if sector == "Norte" and num_habitaciones <= 2 and area_construida <= 190 then
-    random(1200000, 1600000)
-  elsif sector == "Centro" and num_habitaciones >= 3 then
-    random(1500000, 2000000)
-  elsif sector == "Sur" then
-    random(800000, 1300000)
+
+
+
+  ----
+
+
+  if ["Nuevo", "Casi nuevo"].include?(estado)
+  case sector
+  when "Norte"
+    precio_base = 250_000_000
+  when "Centro"
+    precio_base = 200_000_000
+  when "Sur"
+    precio_base = 150_000_000
   else
-    random(1000000, 1800000)
+    precio_base = 120_000_000  # Valor por defecto
   end
 
-else
-  0
+  # Si es "Casi nuevo", se le descuenta 10 millones
+  precio_base -= 10_000_000 if estado == "Casi nuevo"
+
+  # Ajustes por características
+  precio_base += 10_000_000 if parqueadero == "Si"
+  precio_base += (num_habitaciones - 2) * 5_000_000 if num_habitaciones > 2
+  precio_base += (num_banos - 1) * 4_000_000 if num_banos > 1
+  precio_base += [(area_construida - 170), 0].max * 100_000
+  precio_base += (niveles - 2) * 5_000_000 if niveles > 2
+
+  # Precio final con un pequeño rango aleatorio
+  precio = random(precio_base - 5_000_000, precio_base + 5_000_000)
 end
-
-
-
-
-
-if tipo_contrato == "Venta" then
-  if sector == "Norte" and estado == "Nuevo" then
-    if parqueadero == "No" and zonas_comunes == "No" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(130000000, 150000000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(160000000, 190000000)
-      end
-    elsif parqueadero == "Si" and zonas_comunes == "Si" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(140000000, 160000000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(170000000, 200000000)
-      end
-    end
-  end
-  elsif sector == "Centro" and estado == "Nuevo" then
-    if parqueadero == "No" and zonas_comunes == "No" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(110000000, 130000000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(140000000, 160000000)
-      end
-    elsif parqueadero == "Si" and zonas_comunes == "Si" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(130000000, 150000000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(160000000, 180000000)
-      end
-    end
+----
+if ["Nuevo", "Casi nuevo"].include?(estado)
+  case sector
+  when "Norte"
+    precio_base = 250_000_000
+  when "Centro"
+    precio_base = 200_000_000
+  when "Sur"
+    precio_base = 150_000_000
+  else
+    precio_base = 120_000_000
   end
 
-  # --- Sector Sur ---
-  elsif sector == "Sur" and estado == "Nuevo" then
-    if parqueadero == "No" and zonas_comunes == "No" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(90000000, 110000000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(120000000, 140000000)
-      end
-    elsif parqueadero == "Si" and zonas_comunes == "Si" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(110000000, 130000000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(140000000, 160000000)
-      end
-    end
-  end
+  # Descuento por estado "Casi nuevo"
+  precio_base -= 10_000_000 if estado == "Casi nuevo"
+
+  # Ajustes por características
+  precio_base += 10_000_000 if parqueadero == "Si"
+  precio_base += (num_habitaciones - 2) * 5_000_000 if num_habitaciones > 2
+  precio_base += (num_banos - 1) * 4_000_000 if num_banos > 1
+  precio_base += [(area_construida - 170), 0].max * 100_000
+  precio_base += (niveles - 2) * 5_000_000 if niveles > 2
+
+  # Precio final: ajustado y redondeado
+  precio = random(precio_base - 5_000_000, precio_base + 5_000_000).round
 end
-
-elsif tipo_contrato == "Arriendo" then
-  # --- Sector Norte ---
-  if sector == "Norte" and estado == "Nuevo" then
-    if parqueadero == "No" and zonas_comunes == "No" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(1200000, 1600000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(1800000, 2200000)
-      end
-    elsif parqueadero == "Si" and zonas_comunes == "Si" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(1600000, 2000000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(2300000, 2800000)
-      end
-    end
-  end
-
-  # --- Sector Centro ---
-  elsif sector == "Centro" and estado == "Nuevo" then
-    if parqueadero == "No" and zonas_comunes == "No" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(1000000, 1400000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(1500000, 1800000)
-      end
-    elsif parqueadero == "Si" and zonas_comunes == "Si" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(1400000, 1800000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(1900000, 2400000)
-      end
-    end
-  end
-
-  # --- Sector Sur ---
-  elsif sector == "Sur" and estado == "Nuevo" then
-    if parqueadero == "No" and zonas_comunes == "No" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(700000, 1100000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(1200000, 1500000)
-      end
-    elsif parqueadero == "Si" and zonas_comunes == "Si" then
-      if num_habitaciones <= 2 and num_banos == 1 and area_construida <= 170 and niveles <= 2 then
-        random(1100000, 1400000)
-      elsif num_habitaciones > 2 and num_banos >= 2 and area_construida > 170 and niveles >= 2 then
-        random(1500000, 1800000)
-      end
-    end
-  end
-end
-

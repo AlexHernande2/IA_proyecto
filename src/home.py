@@ -58,13 +58,21 @@ def main():
     modo = st.sidebar.radio("Selecciona una opción:", ["Vender casa", "Arrendar casa"], index=0)
     if modo == "Vender casa":
         st.subheader("Dime que tipo de venta quieres")
-        tipo_casa = st.selectbox("Tipo de propiedad:", ["Casa", "Apartamento", "Lote"])
+        tipo_casa = st.selectbox("Tipo de propiedad:", ["Casa", "Apartamento"])
+        niveles = st.number_input("Ingrese los niveles", min_value=1, step=1, max_value=4, format="%d")
         zona= st.selectbox("Ubicación", ["Norte","Sur", "Centro "])
+        estado = st.selectbox(f"Estado de {tipo_casa} ", ["Nuevo", "Casi nuevo"])
+        num_habitaciones = st.number_input("Ingrese el número de habitaciones", min_value=1, step=1, max_value=4, format="%d")
+        num_banos = st.number_input("Ingrese el número de habitaciones", min_value=1, step=1, max_value=3, format="%d")
+        area_construida= st.number_input("Ingrese los metros del area constuida", min_value=150, step=150, max_value=280, format="%d")
+        parqueadero = st.selectbox("Parqueadero:", ["Si", "No"])
+
         if st.button("Enviar información de venta"):
             st.success("Información de venta enviada correctamente.")
             st.write("**Resumen:**")
             st.write(f"- Tipo: {tipo_casa}")
             st.write(f"- Zona: {zona}")
+         
             # st.write(f"- Precio: {precio}")
 
 
@@ -75,7 +83,7 @@ def main():
         ### Basic Interactions
         - **Compra de casas**: Si quieres saber cuanto vale una s.
         - **No sé que poner**: No sé que poner.
-        - **No sé que poner**: No sé que poner.
+        - **No sé que poner**: No sé que ponerm.
         """)
 
 
