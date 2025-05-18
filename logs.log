@@ -1,0 +1,570 @@
+2025-05-17 20:02:58,855:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-05-17 20:02:58,856:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-05-17 20:02:58,856:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-05-17 20:02:58,856:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-05-17 20:02:59,395:INFO:Initializing load_model()
+2025-05-17 20:02:59,396:INFO:Initializing load_model()
+2025-05-17 20:02:59,396:INFO:load_model(model_name=modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:02:59,397:INFO:load_model(model_name=modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:03:24,157:INFO:Initializing load_model()
+2025-05-17 20:03:24,157:INFO:load_model(model_name=modelo_gbr.pkl, platform=None, authentication=None, verbose=True)
+2025-05-17 20:04:39,709:INFO:Initializing load_model()
+2025-05-17 20:04:39,709:INFO:load_model(model_name=modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:05:10,125:INFO:Initializing load_model()
+2025-05-17 20:05:10,127:INFO:load_model(model_name=./modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:06:00,267:INFO:Initializing load_model()
+2025-05-17 20:06:00,267:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:06:03,416:INFO:Initializing load_model()
+2025-05-17 20:06:03,417:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:06:03,911:INFO:Initializing predict_model()
+2025-05-17 20:06:03,912:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027194F899C0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000027194F428C0>)
+2025-05-17 20:06:03,912:INFO:Checking exceptions
+2025-05-17 20:06:03,913:INFO:Preloading libraries
+2025-05-17 20:06:03,914:INFO:Set up data.
+2025-05-17 20:06:03,934:INFO:Set up index.
+2025-05-17 20:06:55,359:INFO:Initializing load_model()
+2025-05-17 20:06:55,359:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:06:56,348:INFO:Initializing load_model()
+2025-05-17 20:06:56,348:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:06:57,635:INFO:Initializing load_model()
+2025-05-17 20:06:57,635:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:06:57,953:INFO:Initializing predict_model()
+2025-05-17 20:06:57,954:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002719678A140>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000027196749FC0>)
+2025-05-17 20:06:57,954:INFO:Checking exceptions
+2025-05-17 20:06:57,955:INFO:Preloading libraries
+2025-05-17 20:06:57,956:INFO:Set up data.
+2025-05-17 20:06:57,975:INFO:Set up index.
+2025-05-17 20:07:06,346:INFO:Initializing load_model()
+2025-05-17 20:07:06,347:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:07:08,366:INFO:Initializing load_model()
+2025-05-17 20:07:08,367:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:07:08,582:INFO:Initializing load_model()
+2025-05-17 20:07:08,582:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:07:11,621:INFO:Initializing load_model()
+2025-05-17 20:07:11,622:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:07:13,892:INFO:Initializing load_model()
+2025-05-17 20:07:13,893:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:07:16,669:INFO:Initializing load_model()
+2025-05-17 20:07:16,670:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:07:16,849:INFO:Initializing predict_model()
+2025-05-17 20:07:16,849:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000271967C4610>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002719674A9E0>)
+2025-05-17 20:07:16,850:INFO:Checking exceptions
+2025-05-17 20:07:16,850:INFO:Preloading libraries
+2025-05-17 20:07:16,851:INFO:Set up data.
+2025-05-17 20:07:16,866:INFO:Set up index.
+2025-05-17 20:07:52,374:INFO:Initializing load_model()
+2025-05-17 20:07:52,376:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:07:53,886:INFO:Initializing load_model()
+2025-05-17 20:07:53,887:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:07:54,063:INFO:Initializing predict_model()
+2025-05-17 20:07:54,064:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000271967C7880>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000027196749E10>)
+2025-05-17 20:07:54,064:INFO:Checking exceptions
+2025-05-17 20:07:54,064:INFO:Preloading libraries
+2025-05-17 20:07:54,064:INFO:Set up data.
+2025-05-17 20:07:54,076:INFO:Set up index.
+2025-05-17 20:08:04,908:INFO:Initializing load_model()
+2025-05-17 20:08:04,910:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:15,449:INFO:Initializing load_model()
+2025-05-17 20:08:15,450:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:18,292:INFO:Initializing load_model()
+2025-05-17 20:08:18,293:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:20,083:INFO:Initializing load_model()
+2025-05-17 20:08:20,084:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:20,292:INFO:Initializing load_model()
+2025-05-17 20:08:20,293:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:21,673:INFO:Initializing load_model()
+2025-05-17 20:08:21,674:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:23,455:INFO:Initializing load_model()
+2025-05-17 20:08:23,455:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:25,316:INFO:Initializing load_model()
+2025-05-17 20:08:25,317:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:25,501:INFO:Initializing load_model()
+2025-05-17 20:08:25,502:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:29,563:INFO:Initializing load_model()
+2025-05-17 20:08:29,564:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:38,574:INFO:Initializing load_model()
+2025-05-17 20:08:38,575:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:40,290:INFO:Initializing load_model()
+2025-05-17 20:08:40,291:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:08:40,457:INFO:Initializing predict_model()
+2025-05-17 20:08:40,457:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000271F7DB3BB0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002719674BEB0>)
+2025-05-17 20:08:40,458:INFO:Checking exceptions
+2025-05-17 20:08:40,458:INFO:Preloading libraries
+2025-05-17 20:08:40,459:INFO:Set up data.
+2025-05-17 20:08:40,472:INFO:Set up index.
+2025-05-17 20:13:54,781:INFO:Initializing load_model()
+2025-05-17 20:13:54,781:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:05,606:INFO:Initializing load_model()
+2025-05-17 20:14:05,609:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:07,046:INFO:Initializing load_model()
+2025-05-17 20:14:07,046:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:08,953:INFO:Initializing load_model()
+2025-05-17 20:14:08,954:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:10,260:INFO:Initializing load_model()
+2025-05-17 20:14:10,261:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:10,901:INFO:Initializing load_model()
+2025-05-17 20:14:10,902:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:21,543:INFO:Initializing load_model()
+2025-05-17 20:14:21,545:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:21,828:INFO:Initializing predict_model()
+2025-05-17 20:14:21,829:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002719678B640>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002719672A290>)
+2025-05-17 20:14:21,830:INFO:Checking exceptions
+2025-05-17 20:14:21,831:INFO:Preloading libraries
+2025-05-17 20:14:21,831:INFO:Set up data.
+2025-05-17 20:14:21,846:INFO:Set up index.
+2025-05-17 20:14:26,767:INFO:Initializing load_model()
+2025-05-17 20:14:26,768:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:28,102:INFO:Initializing load_model()
+2025-05-17 20:14:28,102:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:28,403:INFO:Initializing predict_model()
+2025-05-17 20:14:28,405:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000271967891E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002719674A0E0>)
+2025-05-17 20:14:28,406:INFO:Checking exceptions
+2025-05-17 20:14:28,406:INFO:Preloading libraries
+2025-05-17 20:14:28,408:INFO:Set up data.
+2025-05-17 20:14:28,426:INFO:Set up index.
+2025-05-17 20:14:35,225:INFO:Initializing load_model()
+2025-05-17 20:14:35,226:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:36,422:INFO:Initializing load_model()
+2025-05-17 20:14:36,423:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:36,636:INFO:Initializing predict_model()
+2025-05-17 20:14:36,636:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027196789C60>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002719672A440>)
+2025-05-17 20:14:36,637:INFO:Checking exceptions
+2025-05-17 20:14:36,637:INFO:Preloading libraries
+2025-05-17 20:14:36,637:INFO:Set up data.
+2025-05-17 20:14:36,648:INFO:Set up index.
+2025-05-17 20:14:57,814:INFO:Initializing load_model()
+2025-05-17 20:14:57,816:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:14:58,000:INFO:Initializing predict_model()
+2025-05-17 20:14:58,001:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002719684FEB0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002719674BE20>)
+2025-05-17 20:14:58,001:INFO:Checking exceptions
+2025-05-17 20:14:58,002:INFO:Preloading libraries
+2025-05-17 20:14:58,002:INFO:Set up data.
+2025-05-17 20:14:58,013:INFO:Set up index.
+2025-05-17 20:15:03,546:INFO:Initializing load_model()
+2025-05-17 20:15:03,547:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:15:03,733:INFO:Initializing predict_model()
+2025-05-17 20:15:03,734:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002719678A6E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000027196613400>)
+2025-05-17 20:15:03,734:INFO:Checking exceptions
+2025-05-17 20:15:03,734:INFO:Preloading libraries
+2025-05-17 20:15:03,735:INFO:Set up data.
+2025-05-17 20:15:03,746:INFO:Set up index.
+2025-05-17 20:15:17,971:INFO:Initializing load_model()
+2025-05-17 20:15:17,971:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:15:18,109:INFO:Initializing predict_model()
+2025-05-17 20:15:18,109:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002719665BE80>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000027196749EA0>)
+2025-05-17 20:15:18,109:INFO:Checking exceptions
+2025-05-17 20:15:18,110:INFO:Preloading libraries
+2025-05-17 20:15:18,110:INFO:Set up data.
+2025-05-17 20:15:18,119:INFO:Set up index.
+2025-05-17 20:26:00,926:INFO:Initializing load_model()
+2025-05-17 20:26:00,926:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 20:26:20,013:INFO:Initializing load_model()
+2025-05-17 20:26:20,013:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:09:51,502:INFO:Initializing load_model()
+2025-05-17 23:09:51,503:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:09:53,302:INFO:Initializing load_model()
+2025-05-17 23:09:53,303:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:09:58,489:INFO:Initializing load_model()
+2025-05-17 23:09:58,490:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:09:58,660:INFO:Initializing predict_model()
+2025-05-17 23:09:58,661:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000027196783FD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002719674BF40>)
+2025-05-17 23:09:58,661:INFO:Checking exceptions
+2025-05-17 23:09:58,661:INFO:Preloading libraries
+2025-05-17 23:09:58,661:INFO:Set up data.
+2025-05-17 23:09:58,672:INFO:Set up index.
+2025-05-17 23:10:30,311:INFO:Initializing load_model()
+2025-05-17 23:10:30,312:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:37,845:INFO:Initializing load_model()
+2025-05-17 23:10:37,845:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:38,121:INFO:Initializing load_model()
+2025-05-17 23:10:38,122:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:38,600:INFO:Initializing load_model()
+2025-05-17 23:10:38,602:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:39,579:INFO:Initializing load_model()
+2025-05-17 23:10:39,579:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:44,345:INFO:Initializing load_model()
+2025-05-17 23:10:44,346:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:44,607:INFO:Initializing load_model()
+2025-05-17 23:10:44,607:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:46,234:INFO:Initializing load_model()
+2025-05-17 23:10:46,236:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:52,343:INFO:Initializing load_model()
+2025-05-17 23:10:52,344:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:57,837:INFO:Initializing load_model()
+2025-05-17 23:10:57,839:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:59,163:INFO:Initializing load_model()
+2025-05-17 23:10:59,176:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:10:59,398:INFO:Initializing predict_model()
+2025-05-17 23:10:59,398:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000271967C7AF0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['niveles', 'num_habitaciones',
+                                             'num_banos', 'area_construida',
+                                             'estrato'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'estado', 'parqueadero',
+                                             'sector'],
+                                    transformer=SimpleImputer(strategy='most...
+                                                                        {'col': 'parqueadero',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Si     1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['tipo_vivienda', 'tipo_contrato',
+                                             'sector'],
+                                    transformer=OneHotEncoder(cols=['tipo_vivienda',
+                                                                    'tipo_contrato',
+                                                                    'sector'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model',
+                 GradientBoostingRegressor(random_state=1425))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000027196612B90>)
+2025-05-17 23:10:59,398:INFO:Checking exceptions
+2025-05-17 23:10:59,399:INFO:Preloading libraries
+2025-05-17 23:10:59,399:INFO:Set up data.
+2025-05-17 23:10:59,409:INFO:Set up index.
+2025-05-17 23:11:18,704:INFO:Initializing load_model()
+2025-05-17 23:11:18,705:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:12:34,530:INFO:Initializing load_model()
+2025-05-17 23:12:34,530:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:12:36,159:INFO:Initializing load_model()
+2025-05-17 23:12:36,159:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:12:36,985:INFO:Initializing load_model()
+2025-05-17 23:12:36,985:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:12:37,467:INFO:Initializing load_model()
+2025-05-17 23:12:37,468:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:12:44,274:INFO:Initializing load_model()
+2025-05-17 23:12:44,275:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:12:44,786:INFO:Initializing load_model()
+2025-05-17 23:12:44,787:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:12:56,461:INFO:Initializing load_model()
+2025-05-17 23:12:56,461:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:12:58,867:INFO:Initializing load_model()
+2025-05-17 23:12:58,868:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:13:17,596:INFO:Initializing load_model()
+2025-05-17 23:13:17,597:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:28:54,577:INFO:Initializing load_model()
+2025-05-17 23:28:54,577:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:29:02,168:INFO:Initializing load_model()
+2025-05-17 23:29:02,168:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
+2025-05-17 23:30:38,088:INFO:Initializing load_model()
+2025-05-17 23:30:38,089:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modelo_gbr, platform=None, authentication=None, verbose=True)
