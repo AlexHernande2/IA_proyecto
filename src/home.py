@@ -114,9 +114,9 @@ def main():
 
             resultado = predict_model(modelo, data=datos_usuario)
             precio_estimado = resultado['prediction_label'][0]
-            escribir_mensaje(f"🎮 Pensando...", velocidad=0.08)
+            escribir_mensaje(f"🧠 Pensando...", velocidad=0.08)
             time.sleep(1)
-            escribir_mensaje(f"🍄 El precio estimado de la propiedad es: ${precio_estimado:,.0f}", velocidad=0.08)
+            escribir_mensaje(f"💰 El precio estimado de la 🏡propiedad es: ${precio_estimado:,.0f}", velocidad=0.08)
 
   
          
@@ -152,8 +152,9 @@ def main():
             print(datos_usuario)
             resultado = predict_model(modelo, data=datos_usuario)
             precio_estimado = resultado['prediction_label'][0]
-            st.success(f"Podría arrendar esta propiedad en : ${precio_estimado:,.0f}")
-            st.success("Información de venta enviada correctamente.")
+            escribir_mensaje(f"🧠 Pensando...", velocidad=0.08)
+            time.sleep(1)
+            escribir_mensaje(f"💰 El precio estimado del arriendo de la 🏡propiedad es: ${precio_estimado:,.0f}", velocidad=0.08)
   
         print("Hola prueba")
 
