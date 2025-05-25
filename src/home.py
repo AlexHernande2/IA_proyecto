@@ -114,8 +114,6 @@ def main():
 
             resultado = predict_model(modelo, data=datos_usuario)
             precio_estimado = resultado['prediction_label'][0]
-            # st.success(f"El precio estimado de la propiedad es: ${precio_estimado:,.0f}")
-            # st.success("Información de venta enviada correctamente.")
             escribir_mensaje(f"🎮 Pensando...", velocidad=0.08)
             time.sleep(1)
             escribir_mensaje(f"🍄 El precio estimado de la propiedad es: ${precio_estimado:,.0f}", velocidad=0.08)
@@ -134,14 +132,15 @@ def main():
         area_construida= st.number_input("Ingrese los metros del area constuida", min_value=50, step=150, max_value=300, format="%d")
         parqueadero = st.selectbox("Parqueadero:", ["Si", "No"])
         sector = st.selectbox("Sector:", ["Norte", "Sur", "Centro"], key="sector_arriendo")
-        estrato = st.selectbox("Estrato:", ["1", "2", "3", "4", "5", "6"], key="estrato_arriendo")
+        estrato_opciones = estratos_por_sector.get(sector, [])
+        estrato = st.selectbox("Estrato:", estrato_opciones, key="estrato_arriendo")
 
 
         if st.button("Enviar información de venta"):
             datos_usuario = pd.DataFrame([{
                     'tipo_vivienda': tipo_vivienda,
                     'niveles': niveles,
-                    'tipo_contrato': venta,
+                    'tipo_contrato': arrendar,
                     'area_construida': area_construida,
                     'estado': estado,
                     'num_habitaciones': num_habitaciones,
