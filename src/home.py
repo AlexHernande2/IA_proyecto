@@ -17,8 +17,49 @@ st.set_page_config(
 
     }
 )
-st.title("ChatBot")
 
+# st.title("ChatBot")
+
+st.markdown(
+    """
+    <style>
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0000;
+        padding: 10px 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .header-container img {
+        width: 100px;
+          /* animation: blink 1.2s infinite; */
+    }
+
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+    }
+
+    .header-title {
+        text-align: center;
+        flex-grow: 1;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: white;
+    }
+    </style>
+
+    <div class="header-container">
+        <img src="https://cdn.pixabay.com/animation/2024/04/09/09/56/09-56-25-230_512.gif" alt="bot-izq" />
+        <div class="header-title">ChatBot</div>
+        <img src="https://cdn.pixabay.com/animation/2023/01/07/11/02/11-02-30-972_512.gif" alt="bot-der" />
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 def main():
 
@@ -82,7 +123,7 @@ def main():
         #prueba para lo de cpatura de datos del dataframe
         venta= "Venta"
 
-        st.subheader("Dime que tipo de venta quieres")
+        st.subheader("Dime que tipo de vivienda quieres vender")
         tipo_vivienda = st.selectbox("Tipo de propiedad:", ["Casa", "Apartamento"])
         niveles = st.number_input("Ingrese los niveles", min_value=1, step=1, max_value=4, format="%d")
         estado = st.selectbox(f"Estado de {tipo_vivienda} ", ["Nuevo", "Casi nuevo"])
@@ -95,28 +136,31 @@ def main():
         estrato = st.selectbox("Estrato:", estrato_opciones, key="estrato_venta")
 
         
+        if tipo_vivienda == "Apartamento" and niveles > 2:
+            st.error("Los apartamentos no pueden tener más de 2 niveles.")
+            
+        else:
+            if st.button("Enviar información de venta"):
+                datos_usuario = pd.DataFrame([{
+                        'tipo_vivienda': tipo_vivienda,
+                        'niveles': niveles,
+                        'tipo_contrato': venta,
+                        'area_construida': area_construida,
+                        'estado': estado,
+                        'num_habitaciones': num_habitaciones,
+                        'num_banos': num_banos,
+                        'parqueadero': parqueadero,
+                        'sector': sector,
+                        'estrato': estrato
+                    }])
 
-        if st.button("Enviar información de venta"):
-            datos_usuario = pd.DataFrame([{
-                    'tipo_vivienda': tipo_vivienda,
-                    'niveles': niveles,
-                    'tipo_contrato': venta,
-                    'area_construida': area_construida,
-                    'estado': estado,
-                    'num_habitaciones': num_habitaciones,
-                    'num_banos': num_banos,
-                    'parqueadero': parqueadero,
-                    'sector': sector,
-                    'estrato': estrato
-                }])
+                print(datos_usuario)
 
-            print(datos_usuario)
-
-            resultado = predict_model(modelo, data=datos_usuario)
-            precio_estimado = resultado['prediction_label'][0]
-            escribir_mensaje(f"🧠 Pensando...", velocidad=0.08)
-            time.sleep(1)
-            escribir_mensaje(f"💰 El precio estimado de la 🏡propiedad es: ${precio_estimado:,.0f}", velocidad=0.08)
+                resultado = predict_model(modelo, data=datos_usuario)
+                precio_estimado = resultado['prediction_label'][0]
+                escribir_mensaje(f"🧠 Pensando...", velocidad=0.08)
+                time.sleep(1)
+                escribir_mensaje(f"💰 El precio estimado de la 🏡propiedad es: ${precio_estimado:,.0f}", velocidad=0.08)
 
   
          
@@ -135,28 +179,31 @@ def main():
         estrato_opciones = estratos_por_sector.get(sector, [])
         estrato = st.selectbox("Estrato:", estrato_opciones, key="estrato_arriendo")
 
-
-        if st.button("Enviar información de venta"):
-            datos_usuario = pd.DataFrame([{
-                    'tipo_vivienda': tipo_vivienda,
-                    'niveles': niveles,
-                    'tipo_contrato': arrendar,
-                    'area_construida': area_construida,
-                    'estado': estado,
-                    'num_habitaciones': num_habitaciones,
-                    'num_banos': num_banos,
-                    'parqueadero': parqueadero,
-                    'sector': sector,
-                    'estrato': estrato
-                }])
-            print(datos_usuario)
-            resultado = predict_model(modelo, data=datos_usuario)
-            precio_estimado = resultado['prediction_label'][0]
-            escribir_mensaje(f"🧠 Pensando...", velocidad=0.08)
-            time.sleep(1)
-            escribir_mensaje(f"💰 El precio estimado del arriendo de la 🏡propiedad es: ${precio_estimado:,.0f}", velocidad=0.08)
+        if tipo_vivienda == "Apartamento" and niveles > 2:
+            st.error("Los apartamentos no pueden tener más de 2 niveles.")
+            
+        else:
+            if st.button("Enviar información de venta"):
+                datos_usuario = pd.DataFrame([{
+                        'tipo_vivienda': tipo_vivienda,
+                        'niveles': niveles,
+                        'tipo_contrato': arrendar,
+                        'area_construida': area_construida,
+                        'estado': estado,
+                        'num_habitaciones': num_habitaciones,
+                        'num_banos': num_banos,
+                        'parqueadero': parqueadero,
+                        'sector': sector,
+                        'estrato': estrato
+                    }])
+                print(datos_usuario)
+                resultado = predict_model(modelo, data=datos_usuario)
+                precio_estimado = resultado['prediction_label'][0]
+                escribir_mensaje(f"🧠 Pensando...", velocidad=0.08)
+                time.sleep(1)
+                escribir_mensaje(f"💰 El precio estimado del arriendo de la 🏡propiedad es: ${precio_estimado:,.0f}", velocidad=0.08)
   
-        print("Hola prueba")
+    
 
  
     st.sidebar.markdown("---")
