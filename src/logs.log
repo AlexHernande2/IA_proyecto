@@ -10526,3 +10526,6 @@ dtype: int64}]))),
 2025-05-26 14:14:41,115:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modeloB, platform=None, authentication=None, verbose=True)
 2025-05-26 14:15:33,097:INFO:Initializing load_model()
 2025-05-26 14:15:33,097:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modeloB, platform=None, authentication=None, verbose=True)
+2025-05-26 14:28:09,044:INFO:Initializing load_model()
+2025-05-26 14:28:09,044:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modeloB, platform=None, authentication=None, verbose=True)
+2025-05-26 14:28:49,189:INFO:Initializing load_model()
