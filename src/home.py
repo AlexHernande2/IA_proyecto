@@ -1,8 +1,5 @@
 import streamlit as st 
 import time 
-
-#prueba del modelo de Ml 
-
 from pycaret.regression import load_model, predict_model
 import pandas as pd
 
@@ -17,8 +14,6 @@ st.set_page_config(
 
     }
 )
-
-# st.title("ChatBot")
 
 st.markdown(
     """
@@ -95,12 +90,6 @@ def main():
             placeholder.markdown(f"**{texto_mostrado}**")
             time.sleep(velocidad)
 
-    #logo
-    # image_url = "C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/imagenes/logo.jpg"
-    # st.sidebar.markdown(
-    #         f'<img src="{image_url}" class="cover-glow">',
-    #         unsafe_allow_html=True
-    # )
     st.sidebar.image("C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/imagenes/logo.jpg", use_container_width=True)
 
     st.sidebar.markdown("---")
