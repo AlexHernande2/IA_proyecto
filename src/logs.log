@@ -10530,3 +10530,16 @@ dtype: int64}]))),
 2025-05-26 14:28:09,044:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modeloB, platform=None, authentication=None, verbose=True)
 2025-05-26 14:28:49,189:INFO:Initializing load_model()
 2025-05-26 14:28:49,189:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modeloB, platform=None, authentication=None, verbose=True)
+2025-05-29 08:46:48,862:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-05-29 08:46:48,863:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-05-29 08:46:48,863:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-05-29 08:46:48,864:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-05-29 08:46:49,230:INFO:Initializing load_model()
+2025-05-29 08:46:49,231:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modeloB, platform=None, authentication=None, verbose=True)
+2025-05-29 08:46:55,193:INFO:Initializing load_model()
+2025-05-29 08:46:55,195:INFO:load_model(model_name=C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modeloB, platform=None, authentication=None, verbose=True)
+2025-05-29 08:46:55,454:INFO:Initializing predict_model()

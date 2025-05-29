@@ -1,8 +1,9 @@
 import streamlit as st 
-import time 
-from pycaret.regression import load_model, predict_model
+import time   # Para manejar pausas temporales (efecto de escritura)
+from pycaret.regression import load_model, predict_model  # Para cargar y usar el modelo de regresión
 import pandas as pd
 
+#Carga un modelo de PyCaret previamente entrenado, que predice valores de propiedades
 modelo = load_model('C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/src/modeloB')
 
 st.set_page_config(
@@ -14,6 +15,7 @@ st.set_page_config(
 
     }
 )
+#Encabezado con animaciones y estilo personalizado
 
 st.markdown(
     """
@@ -81,7 +83,7 @@ def main():
         """,
         unsafe_allow_html=True,
     )
-
+    # Efecto de escritura tipo bot
     def escribir_mensaje(mensaje, velocidad=0.05):
         placeholder = st.empty()
         texto_mostrado = ""
@@ -90,8 +92,8 @@ def main():
             placeholder.markdown(f"**{texto_mostrado}**")
             time.sleep(velocidad)
 
+    #logo
     st.sidebar.image("C:/Users/edwin/OneDrive - Universidad de Boyacá/Escritorio/IA_proyecto/imagenes/logo.jpg", use_container_width=True)
-
     st.sidebar.markdown("---")
 
     # Definir opciones de estrato según el sector
@@ -102,12 +104,11 @@ def main():
     }
   
     st.sidebar.markdown("---")
-
+    #Modo de operación: Venta o Arriendo
     modo = st.sidebar.radio("Selecciona una opción:", ["Vender", "Arrendar"], index=0)
     if modo == "Vender":
-        #prueba para lo de cpatura de datos del dataframe
+  
         venta= "Venta"
-
         st.subheader("Dime que tipo de vivienda quieres vender")
         tipo_vivienda = st.selectbox("Tipo de propiedad:", ["Casa", "Apartamento"])
         niveles = st.number_input("Ingrese los niveles", min_value=1, step=1, max_value=4, format="%d")
@@ -120,10 +121,12 @@ def main():
         estrato_opciones = estratos_por_sector.get(sector, [])
         estrato = st.selectbox("Estrato:", estrato_opciones, key="estrato_venta")
 
+        #Validación especial para apartamentos para que no supere más de 2 x el momento en el dagtaset lo trabajamos así
         if tipo_vivienda == "Apartamento" and niveles > 2:
             st.error("Los apartamentos no pueden tener más de 2 niveles.")
         else:
             if st.button("Enviar información de venta"):
+                # Estructura los datos en formato adecuado para el modelo
                 datos_usuario = pd.DataFrame([{
                         'tipo_vivienda': tipo_vivienda,
                         'niveles': niveles,
@@ -136,11 +139,12 @@ def main():
                         'sector': sector,
                         'estrato': estrato
                     }])
-
+                #para verificar si los datos se están enviando sin problemas
                 print(datos_usuario)
-
+                # Predicción con el modelo
                 resultado = predict_model(modelo, data=datos_usuario)
                 precio_estimado = resultado['prediction_label'][0]
+                # Mostrar resultado al usuario con efecto
                 escribir_mensaje(f"🧠 Pensando...", velocidad=0.08)
                 time.sleep(1)
                 escribir_mensaje(f"💰 El precio estimado de la 🏡propiedad es: ${precio_estimado:,.0f}", velocidad=0.08)
@@ -183,7 +187,7 @@ def main():
                 escribir_mensaje(f"💰 El precio estimado del arriendo de la 🏡propiedad es: ${precio_estimado:,.0f}", velocidad=0.08)
 
     st.sidebar.markdown("---")
-
+    #Instrucciones de uso
     st.sidebar.markdown("""
         ### Instrucciones Básicas
         - Selecciona una opción: Elige si deseas vender o arrendar una propiedad.
@@ -194,7 +198,7 @@ def main():
 
 
         """)
-
+#Ejecución del programa
 if __name__ == "__main__":
     main()
 
